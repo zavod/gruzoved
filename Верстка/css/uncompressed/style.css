@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    border: 0px none;
+}
+
+.header .menu ul{
+    list-style: disc;
+    margin: 0 5px 0 5px;
+}
+
+.header .menu{
+    background-color:#5e5d5d;
+}
+
+.content{
+    float: right;
+    width: 718px;
+}
+
+.header .menu ul li {
+    list-style: none;
+    float: left;
+    margin: 0px 1px 0px 0px;
+    text-align: center;
+    line-height: 36px;
+    width: 187px;
+    border-radius: 0px 0px 10px 10px;
+    background: url("../../images/menu_bg.png") no-repeat center bottom;
+
+}
+
+.header .menu ul li:hover {
+    list-style: none;
+    float: left;
+    margin: 0px 1px 0px 0px;
+    text-align: center;
+    line-height: 36px;
+    width: 187px;
+    background: url("../../images/menu_bg_hover.png") no-repeat center bottom;
+
+}
+
+.header .menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+.header .menu ul li:hover a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #094a95 !important;
+}
+
+
+ .header{
+     background: url("../../images/header.png") no-repeat;
+     height: 316px;
+ }
+
+.main .menu {
+    width: 232px;
+    float: left;
+}
+
+.main .menu ul{
+    list-style: disc;
+    margin-bottom: 0px;
+    background: url("../../images/menu_v_bg.png") no-repeat;
+    padding-bottom: 40px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.main .menu ul li {
+    list-style: none;
+    line-height: 25px;
+    background: url("../../images/menu_li_footer.png") no-repeat left bottom;
+    margin-right: 20px;
+    margin-left: 10px;
+
+    
+}
+
+.main .menu a{
+    text-decoration: none;
+    color: #000
+}
+
+.main .menu li:hover a{
+    color:  #094a95 !important;
+    text-decoration: none;
+}
+
+
+
+.menu_header{
+    background: url("../../images/menu_header.png");
+    height: 42px;
+}
+.main{
+    background: url("../../images/main_bg.png");
+    float: left;
+    width: 718px;
+   
+}
+
+.events{
+    float: right;
+    
+    width: 221px;
+    margin-right: 10px;
+
+}
+
+.events .header{
+    background: url("../../images/events_header.png");
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    float: left;
+    width: inherit;
+}
+
+.events .footer{
+    background: url("../../images/events_footer.png");
+    height: 24px;
+    float: left;
+    width: inherit;
+}
+
+.events .content{
+    float: left;
+    height: auto;
+    width: auto;
+    padding:0 10px 0 10px;
+    background-color: #171616;
+}
+
+.event{
+    height: auto;
+    float: left;
+    color: #838383;
+}
+
+.content .page{
+    float: left;
+    width: 467px;
+    color: #929292;
+    padding: 0 10px 0 10px;
+}
+
+.content .page p{
+    word-wrap: break-word;
+}
+
+.content .page h1{
+    color: #094a95;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.event h6{
+    margin: 0;
+    font-size: 12px;
+}
+.event h6 a{
+    color: white;
+}
+
+.main .footer{
+    margin: 0px;
+}
+.footer .address{
+    padding-top: 8px;
+    padding-left: 10px;
+    height: 60px;
+    margin: 0;
+    width: 222px;
+    float: left;
+    background: url("../../images/footer_address_bg.png") repeat-x;
+     /* Для хороших браузеров */
+    -moz-border-radius: 0 10px 0 0; /* Firefox */
+    -webkit-border-radius:0 10px 0 0; /* Safari, Chrome */
+    -khtml-border-radius: 0 10px 0 0; /* KHTML */
+     border-radius: 0 10px 0 0; /* CSS3 */
+     /* Для плохих IE */
+    /*behavior: url("../../js/border-radius.htc");  учим IE border-radius */
+    color: #000000;
+    line-height: 1.2;
+    font-size: 12px;
+}
+
+.main .footer .address a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.main .footer .fill {
+    height: 68px;
+
+    background: url("../../images/footer_bg.png") repeat-x bottom;
+}
+
+.zavod {
+    float: right;
+    margin-right: 10px;
+}
+
+.fill a {
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    left: 580px;
+    top: 39px;
+}

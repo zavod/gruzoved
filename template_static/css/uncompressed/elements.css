@@ -1,0 +1,53 @@
+/* Блок новинка */
+.main .new-products .item,
+.sidebar .offer .item {
+    float:left;
+    margin-right:39px;
+}
+.main .new-products .item .image a,
+.sidebar .offer .item .image a {
+    display:block;
+    border:1px solid #facc30;
+    width:197px;
+    padding:1px;
+    position:relative;
+    margin:0 auto;
+}
+.main .new-products .item .image .new,
+.sidebar .offer .item .image .new {
+    position:absolute;
+    top:-10px;
+    left:-14px;
+}
+.main .new-products .item .title,
+.sidebar .offer .item .title {
+    color:#07366c;
+    text-align:center;
+    padding:5px 0;
+    font-weight:bold;
+}
+.main .new-products .item span.price,
+.sidebar .offer .item span.price {
+    color:#da251c;
+    font-size:14px;
+    float:right;
+}
+
+/* Голосование */
+.main .sidebar .poll .content {
+    background:#fff;
+    margin-top:10px;
+    overflow:hidden;
+    padding:2px;
+    color:#043869;
+}
+.main .sidebar .poll .content .field {
+    padding:0 0 0 5px;
+    margin-top:3px;
+}
+.main .sidebar .poll .content .field label {
+    padding:0 0 0 5px;
+}
+.main .sidebar .poll .content .button {
+    float:right;
+}

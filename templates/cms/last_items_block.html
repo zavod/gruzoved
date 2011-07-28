@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<div class="events">
+    <div class="header">{{ list.title }}</div>
+        <div class="content">
+
+            {% for item in items_list %}
+               <div class="event">
+                 <h6><a href="{{ item.get_url }}">{{ item.title }}</a></h6>
+                
+                    {% if item.short %}
+                    {{ item.short|safe }}
+                    {% else %}
+                    {{ item.body|safe|truncatewords_html:10 }}
+                    {% endif %}
+                
+               </div>
+            {% endfor %}
+             
+
+        </div>
+        <div class="footer"></div>
+</div>        
+

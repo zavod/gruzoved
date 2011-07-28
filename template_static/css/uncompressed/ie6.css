@@ -1,0 +1,19 @@
+.main .container {
+    height:100%;
+}
+.main .bg_s,
+.main .bg_se,
+.main .bg_sw {
+    bottom:-14px;
+}
+
+.menu ul,
+.main .sidebar .poll .content {
+    zoom:1;
+}
+
+.header .buy,
+.header .sale,
+.header .change {
+    display:inline;
+}

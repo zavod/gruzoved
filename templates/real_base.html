@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>{% block title %}ГрузоведЪ{% endblock %}</title>
+{% block head %}
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/text.css" />
+<link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/960_24_col.css" />
+<link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/uncompressed/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/forms.css" />
+
+
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.4x.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui.js"></script>
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="css/ie7.css" />
+<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css" />
+<![endif]-->
+<!-- optional for High Contrast Mode Support -->
+<!--[if IE 6]>
+<link rel="stylesheet" href="css/uncompressed/ie6.css" />
+<script src="js/DD_belatedPNG.js" type="text/javascript"></script>
+<script type="text/javascript">
+  DD_belatedPNG.fix('.pngfix');
+</script>
+<![endif]-->
+{% endblock %}
+</head>
+
+<body>
+{% load cms_tags %}
+{% load menu %}
+
+<div class="container_24">
+    <div class="header grid_24" >
+        <div class="menu">
+            {% menu parent=1 %}     
+        </div>
+    </div>
+     
+    <div class="clear"></div>
+    <div class="main grid_24">
+        <div class="menu">
+        <div class="menu_header"></div>
+            {% menu parent=7 %}
+        </div>
+        <div class="content">
+            {% block content %} {% endblock %}
+            {% block last_items %} {% endblock %}
+        </div>
+        <div class="clear"></div>
+        <div class="grid_24 footer">
+            <div class="address">620085 г.Екатеринбург, <br/> ул.Ферганская 16,оф.107<br/>
+                     тел.: +7 (343) 385 20 45<br/>
+                     E-mail: <a href="mailto:gruzoved@bk.ru">gruzoved@bk.ru</a>
+            </div>
+            <div class="fill">
+                <a href="http://www.zavode.ru">
+                    Сделал
+                    <span class="zavod pngfix"><img src="{{ STATIC_URL }}images/zavod.png"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

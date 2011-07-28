@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}{{ list.title }}{% endblock %}
+
+{% load thumbnail %}
+{% load querystring_tags %}
+{% load i18n %}
+
+
+{% block content %}
+   <div class="page">
+      <h1> {{ list.title }} </h1>
+      <div class="grid_12 timeline">
+        <div class="inner">
+            <div class="month">
+                {% if timeline.prev_year %}
+                <a href="?year={{ timeline.prev_year.year }}"><img src="{{ MEDIA_URL }}images/arrow_l.gif" alt="<" class="l" /></a>
+                {% else %}
+                <span class="l"></span>
+                {% endif %}
+                {% if timeline.next_year %}
+                <a href="?year={{ timeline.next_year.year }}"><img src="{{ MEDIA_URL }}images/arrow_r.gif" alt=">" class="r" /></a>
+                {% else %}
+                <span class="r"></span>
+                {% endif %}
+                <span class="name"><a href="?year={{ timeline.date.year }}">{{ timeline.date.year }}</a></span>
+            </div>
+            <ul>
+                {% for month, value in timeline.months %}
+                    {% if value %}
+                    <li {% if month.month == timeline.date.month and value %}class="active"{% endif %}><a href="?{% qs_alter request.GET month=month.month %}">{{ month|date:"F"|slice:":3" }}.</a></li>
+                    {% else %}
+                    <li>{{ month|date:"F"|slice:":3" }}.</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+      </div><!-- end .grid_12 .timeline -->
+    
+      {% for item in items_list %}
+        <div class="grid_4 thumbnail">
+            {% if item.image %}
+                {% thumbnail item.image 250x0 as thumb %}
+                <img src="{{ thumb.url }}" class="preview" />
+            {% endif %}
+	    </div><!-- end .grid_4-->
+    
+        <div class="grid_8 event">
+            <h6><a href="{{ item.get_url }}">{{ item.title }}</a></h6>
+            {% if item.date %}
+                <p class="article_details">Дата: {{ item.get_date }}</p>
+            {% endif %}
+            {% if item.short %}
+                {{ item.short|safe }}
+            {% else %}
+                {{ item.body|safe|truncatewords_html:45 }}
+            {% endif %}
+        </div><!-- end .grid_8 .item-->
+        <div class="clear">&nbsp;</div>
+      {% endfor %}
+
+      {% if items_list.has_previous or items_list.has_next %}
+<div class="grid_12 pagination">
+<div class="pagination">
+    <span class="step-links">
+        {% if items_list.has_previous %}
+            <a href="?page={{ items.previous_page_number }}">{% trans "previous" %}</a>
+        {% endif %}
+
+        <span class="current">
+            {% trans "Page" %} {{ items_list.number }} {% trans "of" %} {{ items_list.paginator.num_pages }}.
+        </span>
+
+        {% if items_list.has_next %}
+            <a href="?page={{ items.next_page_number }}">{% trans "next" %}</a>
+        {% endif %}
+    </span>
+</div>
+<div class="clear">&nbsp;</div>
+{% endif %}
+   </div>
+
+
+
+{% endblock %}
+
+{% block last_items %}
+{% endblock %}
+

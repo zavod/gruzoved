@@ -1,0 +1,11 @@
+.form input, textarea{
+    border-radius: 8px;
+    background: #1d1d1d;
+    border: 1px solid #4e4e4e;
+}
+
+.form form{
+    background: #1d1d1d;
+    border: #4e4e4e solid;
+    border-radius: 8px;
+}

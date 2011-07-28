@@ -1,0 +1,13 @@
+.main .content {
+    margin-bottom:1em;
+}
+.main .photo {
+    background:#e2e2e0;
+}
+.main .photo img {
+    margin:11px;
+}
+.main .name,
+.main .role {
+    color:#06366a;    
+}

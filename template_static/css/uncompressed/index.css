@@ -1,0 +1,97 @@
+.main .selection {
+    background:url(../../images/selection_bg.gif) repeat-x top left;
+    padding:0 12px 16px 12px;
+    border:1px solid #ad8702;
+    margin-bottom:15px;
+}
+.main .selection h2 {
+    color:#05376d;
+    font-size:18px;
+    font-weight:normal;
+    margin:0;
+    padding:3px 0;
+}
+.main .selection .types {
+    background:#fff;
+    border:1px solid #ad8703;
+    margin-bottom:4px;
+}
+.main .selection .types .item {
+    width:160px;
+    height:70px;
+    float:left;
+    padding:10px 0;
+}
+.main .selection .types .item .label {
+    background:#fce7a1;
+}
+.main .selection .types .item label {
+    display:block;
+    width:110px;
+    text-align:center;
+    padding-left:36px;
+}
+.main .selection .types .item span.ui-radio {
+    margin:0 10px;
+}
+.main .selection .types .left,
+.main .selection .types .right {
+    width:181px;
+}
+.main .selection .types .left label {
+    padding-left:57px;
+}
+.main .selection .types .left span.ui-radio {
+    margin-left:31px;
+}
+
+.main .selection .sliders {
+    width:366px;
+    float:left;
+}
+.main .selection .filter {
+    width:165px;
+    float:left;
+    margin:0 6px 6px 6px;
+}
+.main .selection .filter .title {
+    color:#04376d;
+    text-align:center;
+}
+.main .selection .filter .from {
+    display:block;
+    float:left;
+}
+.main .selection .filter .to {
+    display:block;
+    float:right;
+}
+.main .selection .selects {
+    padding:16px 0 0 0;
+}
+
+.main .new-products {
+    background:#e2e2e0;
+    margin-bottom:15px;
+    position:relative;
+}
+.main .new-products .arrow-left,
+.main .new-products .arrow-right {
+    position:absolute;
+    top:65px;
+    width:13px;
+}
+.main .new-products .arrow-left {
+    left:0;
+}
+.main .new-products .arrow-right {
+    right:0;
+}
+.main .new-products .arrow-right {
+    float:right;
+}
+.main .new-products .iwrapper {
+    width:900px;
+    padding:12px 0 6px 14px;
+    overflow:hidden;
+}

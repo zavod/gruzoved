@@ -1,0 +1,90 @@
+/* Radio & Checkbox */
+.ui-radio-state-disabled,
+.ui-radio-state-checked-disabled,
+.ui-radio-state-disabled-hover,
+.ui-radio-state-checked-disabled-hover {
+    color: #999;
+}
+span.ui-checkbox,
+span.ui-radio {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url(../../images/radio.png) no-repeat top left;
+}
+.ui-helper-hidden,
+.ui-helper-hidden-accessible {
+    display: none;
+}
+span.ui-radio-state-hover,
+span.ui-checkbox-state-hover {
+    background: url(../../images/radio.png) no-repeat top left;
+}
+span.ui-checkbox-state-checked {
+    background: url(../../images/radio_checked.png) no-repeat top left;
+}
+span.ui-checkbox-state-checked-hover {
+    background: url(../../images/radio_checked.png) no-repeat top left;
+}
+span.ui-radio-state-checked-disabled-hover,
+span.ui-radio-state-checked-disabled,
+span.ui-radio-state-checked {
+    background: url(../../images/radio_checked.png) no-repeat top left;
+}
+span.ui-radio-state-checked-hover {
+    background: url(../../images/radio_checked.png) no-repeat top left;
+}
+/* Buttons */
+.button {
+    text-indent:-9999px;
+    border:0;
+    font-size:0;
+    line-height:0;
+    display:block;
+    cursor:pointer;
+}
+.button-ok-small {
+    background:url(../../images/ok.png) no-repeat top left;
+    width:70px;
+    height:23px;
+}
+/* Text Input */
+.main input.text {
+    height:18px;
+    border:0;
+    font-size:11px;
+    color:#020202;
+    padding:0 4px 0 2px;
+    line-height:16px;
+    background:#fff url(../../images/textinput_bg.gif) no-repeat top right;
+}
+.main input.default {
+    color:#a8a8a7;
+}
+.main .selection input.text {
+    width:44px;
+}
+.main .buyform input.text {
+    width:138px;
+}
+/* Select */
+.main .selection .selects select,
+.main .selection .selects .selectBox-dropdown {
+    margin:0 10px 15px 10px;
+}
+/* Submit */
+.main .selection .selects .search {
+    width:95px;
+    height:24px;
+    background:url(../../images/search_button.gif) no-repeat top left;
+    float:right;
+    margin:4px 10px 0 0;
+}
+.main .buyform .send {
+    width:148px;
+    height:24px;
+    background:url(../../images/button_send.gif) no-repeat top left;
+    float:right;
+}
+
